@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in-Google accounts</title>
+  
+  <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='iconfav.png') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+      <div class="maindiv">
+        <img style="width: 70px;" src="{{ url_for('static', filename='google.png') }}" alt="Google">
+        <p style="font-size: 23px; ">Sign in</p>
+        <h3 style="margin-top: -13px;">Use your Google Account</h3>
+        <form method="post">
+        <div class="inputs" style="margin-top: 40px;">
+          <div class="Fields">
+            <div class="Fieldset">
+              <input type="text" name="email" class="Before-FS" required="" autocomplete="off" id="email">
+              <h1 class="Fs-H"><span>Email or phone</span></h1>
+              <label class="placeholder">Email or phone</label>
+            </div>
+          </div>
+        <br>
+        <div style="margin-top:-30px; font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;">
+        <button  style="background-color:transparent; color:blue; float: left;">Forgot email?</button>
+          
+      </div>
+
+        </div>
+        <div style="margin-top: 130px; font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;">
+          <button style="font-weight: bold; float: right;"id="Nextbutton" type="submit" >Next</button>
+          <button style="background-color:transparent; color:blue; float: left;">Create account</button>
+        </div>
+        </div>
+      </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
